@@ -22,6 +22,41 @@
             max-width: 1000px;
         }
     }
+    /*
+    top menu
+    */
+    
+    .navbar-short .nav-item .nav-link,
+    .navbar-toggleable-sm .nav-item .nav-link {
+        color: #5c6167 !important;
+        font-weight: 600;
+    }
+    
+    .nav-item .nav-link.active {
+        color: #ff961c !important;
+    }
+    
+    .nav-item .nav-link:hover {
+        color: #ff961c !important;
+    }
+    
+    .top-social-media {
+        position: absolute;
+        top: -2px;
+        left: 9px;
+    }
+    
+    .top-social-media .social-icon {
+        height: 17px;
+        width: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .top-social-media .social-icon i {
+        font-size: 0.9rem;
+    }
     /**
 the carousel
 */
@@ -148,4 +183,189 @@ the carousel
     
     #programs-section .carousel-control {
         display: -webkit-flex;
+        border: 1px solid #fff;
+        background: none;
+        width: 30px;
+        height: 30px;
+    }
+    /* the footer section */
+    
+    #footer7-m {
+        background-color: #202020;
+    }
+    
+    input,
+    textarea {
+        font-size: 15px;
+        padding: 6px 6px 7px 3px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        background: none;
+        color: #fff;
+    }
+    
+     ::placeholder {
+        color: #fff;
+    }
+    
+    input:focus,
+    textarea:focus {
+        outline: none;
+    }
+    /* LABEL ======================================= */
+    
+    label {
+        color: #fff;
+        font-size: 15px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        right: 21px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    /* active state */
+    
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label {
+        top: -15px;
+        font-size: 14px;
+        color: #5264AE;
+    }
+    /* BOTTOM BARS ================================= */
+    
+    .bar {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    
+    .bar:before,
+    .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #5264AE;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    
+    .bar:before {
+        left: 50%;
+    }
+    
+    .bar:after {
+        right: 50%;
+    }
+    /* active state */
+    
+    input:focus~.bar:before,
+    input:focus~.bar:after,
+    textarea:focus~.bar:before,
+    textarea:focus~.bar:after {
+        width: 50%;
+    }
+    /* HIGHLIGHTER ================================== */
+    
+    .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        right: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    /* active state */
+    
+    input:focus~.highlight,
+    textarea:focus~.highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+    }
+    /* ANIMATIONS ================ */
+    
+    @-webkit-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    @-moz-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    @keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    .btn-submit {
+        color: #fff;
+        background: none;
+        border: 1px solid;
+        border-radius: 18px;
+    }
+    
+    .btn-submit:hover {
+        background: #072174;
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    .contact-section {
+        direction: ltr;
+        text-align: right;
+        color: white;
+        padding-right: 2rem;
+    }
+    
+    .contact-section .sidelines {
+        opacity: 0;
+    }
+    
+    .contact-section ul li {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    }
+    
+    #copyright-section {
+        color: white;
+    }
+    
+    .social-icon {
+        background: #ee8a1e;
+        border-radius: 4px;
+        height: 20px;
+        width: 20px;
+        margin: 0 2px;
+    }
+    
+    .social-icon a {
+        color: #000;
     }
