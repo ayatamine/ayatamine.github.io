@@ -1,17 +1,21 @@
 @font-face {
-    font-family: sainplain;
-    src: url('assets/fonts/ArbFONTS-The-Sans-Plain.otf');
+    font-family: agcregular;
+    src: url('../fonts/AGCRegular.ttf');
 }
 
 @font-face {
-    font-family: sainplainbold;
-    src: url('assets/fonts/ArbFONTS-TheSans-Bold.otf');
+    font-family: agcbold;
+    src: url('../fonts/AGCBold.ttf');
 }
 
-
-/* body {
-        font-family: sinplain;
-    } */
+body,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5 {
+    font-family: agcregular;
+}
 
 .full-screen {
     max-height: 35rem;
@@ -77,6 +81,10 @@
     font-size: 0.9rem;
 }
 
+.social-icon:hover {
+    background-color: #fff;
+}
+
 
 /**
 the carousel
@@ -91,8 +99,10 @@ the carousel
 }
 
 .slider-title-btn {
-    font-size: 4.25rem !important;
+    font-size: 4rem !important;
+    padding: 0.1rem 1.7rem 1.2rem !important;
     font-display: swap;
+    font-family: agcbold;
 }
 
 .btn {
@@ -140,10 +150,20 @@ the carousel
     color: #03238a;
 }
 
+#signal-channel-title {
+    font-family: agcbold;
+}
+
 .signal-channel p,
 .sign span {
     font-size: 1.2rem;
     color: #4c4747;
+}
+
+.signal-channel mbr-text {
+    font-family: 'agcregular';
+    color: #4a4848;
+    line-height: 1.8;
 }
 
 .mb-05 {
@@ -168,7 +188,7 @@ the carousel
 .sidelines span.header {
     display: inline-block;
     background: #fff;
-    padding: 2px 1.8em;
+    padding: 2px 1.2em;
     margin-left: 6px;
     position: relative;
     top: -8px;
@@ -444,4 +464,8 @@ textarea:focus~.highlight {
 
 .social-icon a {
     color: #000;
+}
+
+#logo-footer {
+    max-width: 150px;
 }

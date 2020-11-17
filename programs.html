@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--  <meta name="generator" content="Mobirise v4.12.4, mobirise.com"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link rel="shortcut icon" href="assets/images/logo-122x33.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <meta name="description" content="">
 
 
@@ -42,7 +42,7 @@
                     <div class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></div>
                     <div class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></div>
                     <div class="social-icon"><a href=""><i class="fa fa-youtube"></i></a></div>
-                    <div class="social-icon"><a href=""><i class="fa fa-linkedin"></i></a></div>
+                    <div class="social-icon"><a href=""><i class="fa fa-instagram"></i></a></div>
                 </div>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
@@ -56,7 +56,7 @@
                     <div class="navbar-brand">
                         <span class="navbar-logo">
                         <a href="">
-                            <img src="assets/images/logo-122x33.png" alt="logo" title="" style="height: 3.8rem;">
+                            <img src="assets/images/logo.png" alt="logo" title="" style="height: 3.8rem;">
                         </a>
                     </span>
 
@@ -191,9 +191,9 @@
         <div class="container" dir='rtl'>
             <div class="row">
                 <div class="col-md-7 m-auto m-sm-0">
-                    <h2 class="mbr-section-title mbr-white pb-3 mbr-fonts-style font-weight-bolder sidelines text-white text-right">
+                    <h3 class="mbr-section-title mbr-white pb-3 mbr-fonts-style font-weight-bolder sidelines text-white text-right">
                         </span>تواصل معنا<span class="header left"></span>
-                    </h2>
+                    </h3>
                     <form method="POST" id="contact-form">
 
                         <div class="row mb-3 ">
@@ -213,7 +213,7 @@
                         </div>
                         <div class="row mb-3 ">
                             <div class="group col-sm-6">
-                                <input type="number">
+                                <input type="text">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>رقم الجوال</label>
@@ -266,7 +266,7 @@
                 </div>
             </div>
             <div class="text-center col-12 mt-5" id="#copyright-section">
-                <img src="assets/images/logo-122x33.png" alt="" class='img-responsive'>
+                <img src="assets/images/logo.png" alt="" class='img-responsive' id="logo-footer">
                 <h4 class="text-white mt-3">
                     جميع الحقوق محفوظة
                 </h4>
@@ -275,7 +275,7 @@
                         <div class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></div>
                         <div class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></div>
                         <div class="social-icon"><a href=""><i class="fa fa-youtube"></i></a></div>
-                        <div class="social-icon"><a href=""><i class="fa fa-linkedin"></i></a></div>
+                        <div class="social-icon"><a href=""><i class="fa fa-instagram"></i></a></div>
                     </div>
 
                 </li>
@@ -305,8 +305,14 @@
     <script src="assets/slidervideo/script.js "></script>
 
 
-    <div id="scrollToTop " class="scrollToTop mbr-arrow-up "><a style="text-align: center; "><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up "></i></a></div>
+    <div id="scrollToTop " class="scrollToTop mbr-arrow-up "><a style="text-align: center; " onclick="scrollToTop()"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up "></i></a></div>
     <input name="animation " type="hidden ">
+    <script type="text/javascript">
+        function scrollToTop() {
+            console.log('ol');
+            window.scrollTo(0, 0);
+        }
+    </script>
 </body>
 
 </html>
