@@ -66,13 +66,13 @@
 
                     <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
                         <li class="nav-item">
-                            <a class="nav-link link text-white display-4 " href="index.html">الرئيسية</a>
+                            <a class="nav-link link text-white display-6  " href="index.html">الرئيسية</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4" href="lives.html">
+                        <li class="nav-item"><a class="nav-link link text-white display-6 " href="lives.html">
                             البث المباشر</a></li>
-                        <li class="nav-item"><a class="nav-link link text-white display-4 active" href="programs.html">البرامج</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-6  active" href="programs.html">البرامج</a></li>
                         <li class="nav-item">
-                            <a class="nav-link link text-white display-4" href="#contact-form">تواصل معنا</a>
+                            <a class="nav-link link text-white display-6 " href="#contact-form">تواصل معنا</a>
                         </li>
                     </ul>
 
@@ -194,7 +194,7 @@
                     <h3 class="mbr-section-title mbr-white pb-3 mbr-fonts-style font-weight-bolder sidelines text-white text-right">
                         </span>تواصل معنا<span class="header left"></span>
                     </h3>
-                    <form method="POST" id="contact-form">
+                    <form method="post" id="contact-form">
 
                         <div class="row mb-3 ">
                             <div class="group col-sm-6">
@@ -213,10 +213,10 @@
                         </div>
                         <div class="row mb-3 ">
                             <div class="group col-sm-6">
-                                <input type="text">
+                                <input type="text" id="phone_number" valid>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>رقم الجوال</label>
+                                <label id="phonelabel">رقم الجوال</label>
                             </div>
 
                             <div class="group col-sm-6">
@@ -265,12 +265,12 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center col-12 mt-5" id="#copyright-section">
+            <div class="text-center col-12 mt-5" id="copyright-section">
                 <img src="assets/images/logo.png" alt="" class='img-responsive' id="logo-footer">
-                <h4 class="text-white mt-3">
+                <h6 class="text-white mt-3 mb-4">
                     جميع الحقوق محفوظة
-                </h4>
-                <li class="" style="margin-top: -1rem;">
+                </h6>
+                <li class="list-unstyled">
                     <div class=" d-flex justify-content-center">
                         <div class="social-icon"><a href=""><i class="fa fa-facebook"></i></a></div>
                         <div class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></div>
@@ -306,12 +306,22 @@
 
 
     <div id="scrollToTop " class="scrollToTop mbr-arrow-up "><a style="text-align: center; " onclick="scrollToTop()"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up "></i></a></div>
-    <input name="animation " type="hidden ">
+    <input name="animation " type="hidden " style="height: 0;padding: 0;border: 0;">
     <script type="text/javascript">
         function scrollToTop() {
             console.log('ol');
             window.scrollTo(0, 0);
         }
+        $('#phonelabel').css('top', '11px').css('color', 'white');
+        $(document).on('focus', '#phone_number ', function() {
+            $('#phonelabel').css('top', '-15px').css('color', '#5264AE');
+        })
+        $(document).on('focusout', '#phone_number ', function() {
+            if (!$(this).val()) {
+                $('#phonelabel').css('top', '11px').css('color', 'white');
+
+            }
+        })
     </script>
 </body>
 
